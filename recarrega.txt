@@ -1,0 +1,12 @@
+<?php
+
+ 
+ echo "<a href='exit.php'>SAIR</a>";
+ echo "</br>";
+          echo "PÁGINA INICIAL";
+		  
+
+		  
+		  
+
+ ?>

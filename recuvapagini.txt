@@ -1,0 +1,47 @@
+
+<?php
+//$sessao=SESSION_START();
+//if(!isset($_POST['senha'])){
+
+//unset($_SESSION['senha']);
+//unset($_SESSION['id']);{
+//if($sessao){
+?>
+<?php
+$arq=fopen('http://pdvsystem.wuaze.com/recarrega.txt','r');
+
+$rec=fopen('pagini.php','w');
+while(($linha=fgets($arq,4096))!==false){
+
+$text=$linha;
+
+$change=fwrite($rec,$text);
+
+}
+
+fclose($arq);
+fclose($rec);
+
+
+
+if($change){
+
+$res= "os dados de .txt foram inseridos em pagini.php";
+echo $res;
+header('Location:pagini.php');
+}else{
+$res= "não foi inserido";
+echo $res;
+}
+?>
+
+
+/*{echo $res1;$res1;
+}else{
+echo $res2;}*/
+
+
+
+
+?>
+
